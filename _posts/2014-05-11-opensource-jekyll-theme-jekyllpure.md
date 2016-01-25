@@ -2,9 +2,9 @@
 layout: post
 title: Jekyll主题 &bull;JekyllPure
 description: "Static Markdown (or Textile), Liquid, HTML & CSS go in. Static sites come out ready for deployment. Jekyll template guide,JekyllPure是一个基于jekyll主题,集成了各种方便的插件,以及简洁的页面"
-category: Project
+category: JekyllTheme
 avatarimg: "http://liyouhai.com/images/lindachung.jpg"
-tags : [Jekyll]
+tags : [jekyll-theme]
 duoshuo: false
 ---
 

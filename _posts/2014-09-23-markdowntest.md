@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Test
-category: LDD
+category: Markdown
 tags:
 description: this is a post description, you can use variable {{post.description}} to show it in wherever you want.
 ---

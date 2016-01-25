@@ -47,10 +47,10 @@ h3 {
 }
 
 .sidebar {
-   // background: #2d3339;
-    //background: rgb(61, 79, 93);
-
-    color: #fff;
+   background-color: #273E38;
+   //background-color:#542a15;
+   // background: rgb(61, 79, 93);
+   color: #fff;
 }
 
 .brand-title,
@@ -115,6 +115,7 @@ h3 {
     font-size: 2em;
     color: #222;
     margin-bottom: 0.2em;
+    font-family: Cursive, KaiTi, KaiTi_GB2312, STKaiti;
 }
 .post-avatar {
     border-radius: 50px;
@@ -130,13 +131,13 @@ h3 {
     font-size: 90%;
     margin: 0;
 }
-
 .post-category {
     margin: 0 0.1em;
     padding: 0.3em 1em;
     color: #fff;
     background: #999;
     font-size: 80%;
+    border-radius: 15px;
 }
 .post-categorybut{
     margin: 0 0.1em;
@@ -162,7 +163,26 @@ h3 {
     background: #1c5461;
 }
 
+.post h1 {
+  position: relative;
+  margin: 30px 0 20px;
+  text-rendering: optimizeLegibility;
+  font-family: Cursive, KaiTi, KaiTi_GB2312, STKaiti;
+}
 
+.post h1:before {
+  display: inline;
+  position: absolute;
+  top: auto;
+  color: #75715E;
+}
+
+@media (min-width: 30.1rem) {
+    .post h1:before {
+      content: "#";
+      left: -1.25em;
+    }
+}
 
 .post-images {
     margin: 1em 0;
@@ -179,7 +199,7 @@ h3 {
     padding: 1em 0;
 }
 .footer a {
-    color: #ccc;
+    color: #75715E;
     font-size: 80%;
     margin: 0 5px;
 }
@@ -273,11 +293,11 @@ h3 {
     100% { transform: rotate(360deg); }
 }
 
-/*鑷娣诲姞*/
+/*mark 引用*/
 blockquote{
     border-left: 5px solid rgba(102, 128, 153, 0.075);
     background: rgba(102, 128, 153, 0.05);
-    margin:1em 0.3em;
+    margin:-0.7em 0em 0.5em;
 }
 blockquote ul li{
     list-style-type:decimal;
@@ -294,7 +314,7 @@ blockquote ul li{
 .pagination-item {
     border: 1px solid #eee;
     text-align:center;
-    color: #ccc;
+    color: #75715E;
 }
 a.pagination-item:hover {
     background-color: #6a9fb5;
@@ -314,7 +334,7 @@ a.pagination-item:hover {
     width: 50px;
     height: 65px;
     display: inline-block;
-    background: url(/images/back_to_top.png) no-repeat;     //weiyi.theme.modify 淇敼灏忕伀绠浘鐗囩殑璺緞
+    background: url(/images/back_to_top.png) no-repeat;     //weiyi.theme.modify
     outline: none;
 }
 
@@ -343,6 +363,39 @@ a.pagination-item:hover {
     height: auto;
     border-radius: 2px;
 }
+
+/* mark 标题和段落的间距 */
+.article h2, h3, h4{
+  position: relative;
+  margin: 30px 0 20px;
+  text-rendering: optimizeLegibility;
+  font-family: Cursive, KaiTi, KaiTi_GB2312, STKaiti;
+}
+
+/*mark:  标题前#的颜色，和footer超链颜色相同*/
+.article h2:before, h3:before, h4:before {
+  display: inline;
+  position: absolute;
+  top: auto;
+  color: #75715E;
+}
+
+/*mark:  标题前#的距离*/
+@media (min-width: 30.1rem) {
+    .article h2:before {
+      content: "##";
+      left: -1.5em;
+    }
+    .article h3:before {
+      content: "###";
+      left: -2.0em;
+    }
+    .article h4:before {
+      content: "####";
+      left: -2.5em;
+    }
+}
+
 table{
     background: rgba(102, 128, 153, 0.05);
     font-size: 1em;
@@ -364,4 +417,11 @@ table tr:nth-of-type(2n) {
     *display: inline;
     zoom: 1;
     margin: 10px 10px;
+}
+
+img[alt="image"] {
+  max-width: 400px; 
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
 }
